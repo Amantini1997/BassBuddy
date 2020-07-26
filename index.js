@@ -24,6 +24,9 @@ window.onload = () => {
         }
     });
 
+    document.querySelectorAll(".accordion > .question").forEach(button => {
+        button.onclick = () => button.classList.toggle("active");
+    });
 }
 
 function toggleSection(button) {
@@ -44,3 +47,4 @@ function toggleSection(button) {
 function swipePage(page) {
     document.querySelector(`[data-page=${page}`).click();
 }
+
