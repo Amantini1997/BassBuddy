@@ -1,0 +1,227 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>BassBuddy</title>
+</head>
+<body>
+    <header class="shadow">
+        <nav>
+            <button data-page="home" class="nav-option selected">Home</button>
+            <button data-page="download" class="nav-option">Download</button>
+            <button data-page="how-to" class="nav-option">How To/F&Q</button>
+            <button data-page="donate" class="nav-option">Donate</button>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>BassBuddy, the best way to find and filter your bass music</h1>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <img src="img/bbcreateplaylist.jpg" class="swiper-slide">
+                    <img src="img/bbfreq.jpg" class="swiper-slide">
+                    <img src="img/bbgenre.jpg" class="swiper-slide">
+                    <img src="img/bbsearch.jpg" class="swiper-slide">
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-button-black"></div>
+                <div class="swiper-button-next swiper-button-black"></div>
+            </div>
+            <div>
+                <p>
+                    Do you have so many re-bassed songs you find it hard to get songs that will play well on 
+                    your system and you can vibe with? Well fear no more as BassBuddy is here to sort you out.
+                    <br>
+                    With the thousands of songs re-bass artists have produced it can sometimes be a gruelling task 
+                    to find the songs with a specific frequency that you know will play on your audio system. Whereas 
+                    traditional methods of searching for songs (typing in specific numbers in file explorer) can 
+                    work it often takes a long time create a set of songs you’re confident will play well. Not only 
+                    songs that play well it is often the case you’d wants songs with a vibe similar to yours. This 
+                    is where the genre searching feature comes into play and you can filter the songs down to a 
+                    certain genre(s) for that little bit extra control.
+                </p>
+                
+                <b>Features:</b>
+                <ul>
+                    <li>Works on Windows, Linux and MacOS (assuming Java is installed)</li>
+                    <li>Scans your local music folders to generate a database (1-time setup)</li>
+                    <li>Applies genre tags to each song based off artists</li>
+                    <li>Search for songs with a specific frequency (includes a +/- range)</li>
+                    <li>Search for songs within a range of frequencies</li>
+                    <li>Search for songs with a certain genre(s)</li>
+                    <li>Quickly create new playlists to keep your music fresh</li>
+                    <li>Works with a variety of re-bass artists</li>
+                </ul>
+                <hr>
+                <p>
+                    If this sounds like a program that will be useful to you (I cannot image why it wouldn’t be), 
+                    head over to the <u onclick="swipePage('download')">download page</u> and give it a try. 
+                    For guidance on how to use BassBuddy visit the 
+                    <u onclick="swipePage('how-to')">How To/F&Q page</u> and watch the short video 
+                    explaining how to use it.
+                </p>
+            </div>
+        </section>
+        <section id="download" hidden>
+            <h1>Welcome to the download page!</h1>
+
+            <p>
+                Here you can download any released version of <strong>BassBuddy</strong>. It is recommended to 
+                download the latest version to ensure the best compatibility and (hopefully) a less buggy 
+                release. If you have any issues with either the download or application please email 
+                <a href="mailto:BassBuddyTeeDeL@outlook.com">BassBuddyTeeDeL@outlook.com</a> to report 
+                any issues.
+            </p>
+            <table id="download-table">
+                <thead>
+                    <th>Version</th>
+                    <th>Link</th>
+                    <th>Date (DD/MM/YYYY)</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.0.1</td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+                        <td>17/08/2020</td>
+                    </tr>
+                    <tr>
+                        <td>1.0.0</td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+                        <td>10/08/2020</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                For help with any set up or issues that might arise please visit the 
+                <u onclick="swipePage('how-to')">How To/F&Q page</u> which may be able to assist.            
+            </p>
+        </section>
+
+        <section id="how-to" hidden>
+            <h1>Need help? Any issues? Any questions? </h1>
+            <p>
+                Okay so if you’re like me and find a video guide useful then it may be a
+                good idea to watch this short video going over how to use BassBuddy 
+                and some of the features it has:
+            </p>
+            <img id="video-tutorial" src="https://via.placeholder.com/400x150" alt="">
+            <br>
+            <b>Setup:</b>
+            
+            <p>
+                <strong>BassBuddy</strong> runs on Java so you will need Java installed 
+                to run the application. While I find it unlikely for you to not have java 
+                installed you can get it from <a href="https://www.java.com/en/download/">https://www.java.com/en/download/</a>.
+            </p>
+            
+            <p>
+                Once Java is installed, download the latest <strong>BassBuddy</strong> 
+                release and you will have a folder containing <b>BassBuddy.jar</b>, <b>start.bat</b> and <b>start.sh</b>. 
+                Depending on you operating system (OS) (Windows/Linux/MacOS) determines how to launch the application.
+                <ul>
+                    <li>If you’re on Windows use the <b>launch.bat</b></li>
+                    <li>If you’re on Linux/MacOS use <b>launch.sh</b></li>
+                </ul>
+                On first time launch, your OS will ask for network access (It needs network access 
+                to check for version changes and to connect to the genre database).
+            </p>
+            
+            <p>
+                You should now be greeted by BassBuddys settings page where it 
+                will ask for you to select a ‘top level folder’ which contains all your music. 
+                E.g. <code>&nbsp;C:\music\rebassed&nbsp;</code>. Any folders within this folder will get scanned 
+                in and it will search for mp3 files to create a local database.
+                <br> 
+                After this initial setup stage, you’re good to go with using BassBuddy.
+            </p>
+            
+            <b>F&Q:</b>
+            <div class="accordion">
+                <button class="question">Help! The program is not working</div>
+                <div class="answer">
+                    If you encounter an error with the program and cannot figure it out, please email me 
+                    at <a href="mailto:BassBuddyTeeDeL@outlook.com">BassBuddyTeeDeL@outlook.com</a>, 
+                    send bassbuddy.log to help with debugging and provide a brief explanation as to what went wrong.
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="question">
+                    Is this program free?
+                </button>
+                <div class="answer">
+                    Yes! However, I do ask if you have found it useful to drop a small donation if you can afford it.
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="question">
+                    Can I request a feature?
+                </button>
+                <div class="answer">
+                    Absolutely! I plan on keeping <strong>BassBuddy</strong> updated so long as people have 
+                    a use for it. I will  say that donor feature requests are much more likely to get worked 
+                    on as it’s a good incentive for myself.
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="question">
+                    The genres for songs can be a bit weird, why is that?
+                </button>
+                <div class="answer">
+                    My method of getting songs genres is by searching a database for an artists name. Sadly 
+                    this does produce some odd genres for artists with un-unique name where there may be multiple entries.
+                </div>
+            </div>
+            <!-- <div class="accordion">
+                <button class="question"></button>
+                <div class="answer"></div>
+            </div>
+            <div class="accordion">
+                <button class="question"></button>
+                <div class="answer"></div>
+            </div> -->
+            <p>
+                As more people use this program and have more questions arise, I will add the most 
+                common ones here to hopefully reach as many of you as I can with answers. 
+            </p>
+            
+        </section>
+        <section id="donate" hidden>
+            <h1>Donate? You’re too kind 🧡</h1>
+            <p>
+                Firstly, I would like to thank all of you that download and use my program. It has taken many months 
+                to get it to the stage where it is, and I hope that it works well for your needs. As this is a 
+                free program (and will stay free) I do ask if you’ve found it useful to kindly donate. I am currently 
+                studying in my final year of university but would like to continue support for <strong>BassBuddy</strong> when I find free time.
+            </p>
+            <p>
+                While I do take in feature requests for free to improve <strong>BassBuddy</strong>, I would be much more incentivized 
+                to put the time aside if the request was made by a donor (You can leave a feature request with the donation or 
+                email me at <a href="mailto:BassBuddyTeeDeL@outlook.com">BassBuddyTeeDeL@outlook.com</a>).
+            </p>
+            
+            <div class="center-ctn">
+                <button id="donate-button" class="shadow" href="https://paypal.me/swiftos">Donate</button>
+            </div>
+            <p>
+                If the button does not work for whatever reason you can send a donation through this link 
+                <a href="https://paypal.me/swiftos">https://paypal.me/swiftos</a>.
+                Once again thank you to anyone that has donated, it helps a lot more than you’d expect.
+            </p>
+                
+        </section>
+    </main>
+    <footer>
+        <div>App creator: Joshua Swift</div>
+        <div>Website creator: Amantini Alessandro</div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
