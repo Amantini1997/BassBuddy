@@ -2,8 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>BassBuddy</title>
 </head>
 <body>
@@ -17,23 +17,22 @@
     </header>
     <main>
         <section id="home">
-            <h1>BassBuddy, the best way to find and filter your bass music</h1>
-
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <img src="img/bbcreateplaylist.jpg" class="swiper-slide">
-                    <img src="img/bbfreq.jpg" class="swiper-slide">
-                    <img src="img/bbgenre.jpg" class="swiper-slide">
-                    <img src="img/bbsearch.jpg" class="swiper-slide">
+            <div display="floating-block">
+                <h1>BassBuddy, the best way to find and filter your bass music</h1>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <img src="img/bbcreateplaylist.jpg" class="swiper-slide">
+                        <img src="img/bbfreq.jpg" class="swiper-slide">
+                        <img src="img/bbgenre.jpg" class="swiper-slide">
+                        <img src="img/bbsearch.jpg" class="swiper-slide">
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-button-black"></div>
+                    <div class="swiper-button-next swiper-button-black"></div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-            
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev swiper-button-black"></div>
-                <div class="swiper-button-next swiper-button-black"></div>
-            </div>
-            <div>
                 <p>
                     Do you have so many re-bassed songs you find it hard to get songs that will play well on 
                     your system and you can vibe with? Well fear no more as BassBuddy is here to sort you out.
@@ -46,18 +45,22 @@
                     is where the genre searching feature comes into play and you can filter the songs down to a 
                     certain genre(s) for that little bit extra control.
                 </p>
-                
-                <b>Features:</b>
-                <ul>
-                    <li>Works on Windows, Linux and MacOS (assuming Java is installed)</li>
-                    <li>Scans your local music folders to generate a database (1-time setup)</li>
-                    <li>Applies genre tags to each song based off artists</li>
-                    <li>Search for songs with a specific frequency (includes a +/- range)</li>
-                    <li>Search for songs within a range of frequencies</li>
-                    <li>Search for songs with a certain genre(s)</li>
-                    <li>Quickly create new playlists to keep your music fresh</li>
-                    <li>Works with a variety of re-bass artists</li>
-                </ul>
+            </div>
+            <div id="non-floating-block">
+                <hr>
+                <div>
+                    <b>Features:</b>
+                    <ul>
+                        <li>Works on Windows, Linux and MacOS (assuming Java is installed)</li>
+                        <li>Scans your local music folders to generate a database (1-time setup)</li>
+                        <li>Applies genre tags to each song based off artists</li>
+                        <li>Search for songs with a specific frequency (includes a +/- range)</li>
+                        <li>Search for songs within a range of frequencies</li>
+                        <li>Search for songs with a certain genre(s)</li>
+                        <li>Quickly create new playlists to keep your music fresh</li>
+                        <li>Works with a variety of re-bass artists</li>
+                    </ul>
+                </div>
                 <hr>
                 <p>
                     If this sounds like a program that will be useful to you (I cannot image why it wouldn’t be), 
@@ -226,8 +229,14 @@
         </section>
     </main>
     <footer>
-        <div>App creator: Joshua Swift</div>
-        <div>Website creator: Amantini Alessandro</div>
+        <div>
+            <span>App creator:&nbsp;</span> 
+            <span>Swift Joshua</span>
+        </div>
+        <div>
+            <span>Website creator:&nbsp;</span> 
+            <span>Amantini Alessandro</span>
+        </div>
     </footer>
 
     <script src="index.js"></script>
