@@ -142,6 +142,7 @@ main {
 #download-table > tbody > tr:hover,
 #download-table > tbody > tr:nth-child(odd):hover {
     background-color: var(--brown);
+    color: var(--white);
 }
 
 #download-table > tbody > tr {
