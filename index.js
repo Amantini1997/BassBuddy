@@ -24,7 +24,7 @@ window.onload = () => {
         }
     });
 
-    document.querySelectorAll(".accordion > .question").forEach(button => {
+    document.querySelectorAll(".accordion > .accordion__question").forEach(button => {
         button.onclick = () => button.classList.toggle("active");
     });
 }

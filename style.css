@@ -104,16 +104,15 @@ main {
     margin: auto;
 }
 
-.swiper-container {
+.float-left {
     width: 622px;
-    height: fit-content;
     margin-right: 15px;
     margin-bottom: 15px;
     float: left;
 }
 
 @media only screen and (max-width: 800px) {
-    .swiper-container {
+    .float-left {
         width: 100%;
     }
 }
@@ -169,7 +168,7 @@ main {
     transition: all 0.3s;
 }
 
-.accordion > .question {
+.accordion > .accordion__question {
     background-color: var(--gray);
     width: 100%;
     min-height: 50px;
@@ -185,32 +184,32 @@ main {
     align-items: center;
 }
 
-.accordion > .question:hover {
+.accordion > .accordion__question:hover {
     background-color: var(--brown);
     color: var(--white);
 }
 
-.accordion > .question:hover > span {
+.accordion > .accordion__question:hover > span {
     color: var(--white);
 }
 
-.accordion > .question > span {
+.accordion > .accordion__question > span {
     color: var(--black);
     font-weight: 600;
     font-size: 1.3rem;
 }
 
-.accordion > .question.active > span:last-child {
+.accordion > .accordion__question.active > span:last-child {
     transform: rotate(90deg);
 }
 
-.accordion > .question.active + .answer {
+.accordion > .accordion__question.active + .accordion__answer {
     margin-bottom: 15px;
     background: var(--white);
     display: block;
 }
 
-.accordion .answer {
+.accordion .accordion__answer {
     padding: 15px;
     display: none;
     background-color: transparent;
